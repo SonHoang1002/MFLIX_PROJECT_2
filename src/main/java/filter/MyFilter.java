@@ -21,7 +21,8 @@ public class MyFilter implements Filter {
 
     public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain chain) {
         try {
-            if (!process((HttpServletRequest) request, (HttpServletResponse) response)) {
+            if (!process((HttpServletRequest) request, (HttpServletResponse) response))
+           {
                 chain.doFilter(request, response);
             }
         } catch (Exception e) {
