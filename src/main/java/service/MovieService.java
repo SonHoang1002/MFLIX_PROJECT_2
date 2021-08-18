@@ -10,7 +10,7 @@ import java.util.List;
 public class MovieService {
 
     public List<Movie> getMoviesforHomePage() {
-        List<Movie> list = new MovieDAO().getMovies(3);
+        List<Movie> list = new MovieDAO().getMovies(10);
         if (list == null) {
             list = new ArrayList<>();
             //add some sample movies;
